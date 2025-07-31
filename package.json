@@ -1,0 +1,40 @@
+{
+  "name": "reviewbot-pro",
+  "version": "1.0.0",
+  "description": "AI-powered review response generator SaaS application",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run frontend:dev\"",
+    "server:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "cd backend && npm test",
+    "setup": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "migrate": "cd backend && npm run migrate",
+    "seed": "cd backend && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nairvineeth64/reviewbot-pro.git"
+  },
+  "keywords": [
+    "ai",
+    "review",
+    "response",
+    "generator",
+    "saas",
+    "automation",
+    "openai",
+    "gpt-4"
+  ],
+  "author": "ReviewBot Pro Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nairvineeth64/reviewbot-pro/issues"
+  },
+  "homepage": "https://github.com/nairvineeth64/reviewbot-pro#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
